@@ -259,6 +259,10 @@
             border: 5px solid var(--primary);
             box-shadow: 0 15px 25px -8px rgba(0,0,0,0.2);
         }
+        /* fallback image style */
+        img {
+            background-color: #e2e8f0;
+        }
     </style>
 </head>
 <body>
@@ -298,7 +302,7 @@
                 <i class="fas fa-check-circle" style="color:var(--primary);"></i> Army Physical • Bihar Police Physical • SSC GD Fitness • Running & stamina.</p>
             </div>
             <div style="flex:1; text-align: center;">
-                <img src="images/6.jpeg" alt="Coach Training" style="width:100%; border-radius: 48px; box-shadow: var(--shadow-soft);">
+                <img src="images/6.jpeg" alt="Coach Training" style="width:100%; border-radius: 48px; box-shadow: var(--shadow-soft);" onerror="this.src='https://placehold.co/500x350/2a4b44/white?text=Coach+Ganesh+Sir'">
             </div>
         </div>
     </div>
@@ -324,11 +328,11 @@
     <div class="container">
         <div class="section-title">Our <span>Training Programs</span></div>
         <div class="cards-grid">
-            <div class="card course-card" style="text-align:left;"><i class="fas fa-user-graduate"></i><h3>Army Physical</h3><p>Running, push-ups, stamina drills as per selection standards.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card course-card" style="text-align:left;"><i class="fas fa-shield-virus"></i><h3>Bihar Police Physical</h3><p>High-intensity running, obstacle & endurance training.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card course-card" style="text-align:left;"><i class="fas fa-tachometer-alt"></i><h3>SSC GD Fitness</h3><p>Speed, endurance, exam-based physical standards.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card course-card" style="text-align:left;"><i class="fas fa-shoe-prints"></i><h3>Running & Sprint Training</h3><p>100m, 400m, long-distance technique improvement.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card course-card" style="text-align:left;"><i class="fas fa-dumbbell"></i><h3>Strength & Fitness</h3><p>Full-body workout, muscle endurance development.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
+            <div class="card" style="text-align:left;"><i class="fas fa-user-graduate"></i><h3>Army Physical</h3><p>Running, push-ups, stamina drills as per selection standards.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
+            <div class="card" style="text-align:left;"><i class="fas fa-shield-virus"></i><h3>Bihar Police Physical</h3><p>High-intensity running, obstacle & endurance training.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
+            <div class="card" style="text-align:left;"><i class="fas fa-tachometer-alt"></i><h3>SSC GD Fitness</h3><p>Speed, endurance, exam-based physical standards.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
+            <div class="card" style="text-align:left;"><i class="fas fa-shoe-prints"></i><h3>Running & Sprint Training</h3><p>100m, 400m, long-distance technique improvement.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
+            <div class="card" style="text-align:left;"><i class="fas fa-dumbbell"></i><h3>Strength & Fitness</h3><p>Full-body workout, muscle endurance development.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
         </div>
     </div>
 </section>
@@ -339,15 +343,14 @@
         <div class="section-title">Training <span>Gallery</span></div>
         <div class="section-sub">Witness real action – running drills, strength workouts, group practice & campus life</div>
         <div class="gallery-grid">
-            <a href="https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/1.jpeg" alt="Running practice"></a>   
-            <a href="https://images.pexels.com/photos/47611/pushups-gym-push-up-sport-47611.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/2.jpeg" alt="Strength drills"></a>
-            <a href="https://images.pexels.com/photos/116077/pexels-photo-116077.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/3.jpeg" alt="Obstacle training"></a>
-            <a href="https://images.pexels.com/photos/841133/pexels-photo-841133.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/4.jpeg" alt="Group excercise"></a>
-            <a href="https://images.pexels.com/photos/260035/pexels-photo-260035.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/5.jpeg" alt="Morning drill"></a>
-            <a href="https://images.pexels.com/photos/1713116/pexels-photo-1713116.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/6.jpeg" alt="Coach mentoring"></a>
-            <a href="https://images.pexels.com/photos/1713116/pexels-photo-1713116.jpeg?auto=compress&cs=tinysrgb&w=1200" data-lightbox="gallery" class="gallery-item"><img src="images/7.jpeg" alt="Coach mentoring"></a>
+            <a href="images/1.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/1.jpeg" alt="Running practice" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Running+Practice'"></a>   
+            <a href="images/2.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/2.jpeg" alt="Strength drills" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Strength+Drills'"></a>
+            <a href="images/3.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/3.jpeg" alt="Obstacle training" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Obstacle+Training'"></a>
+            <a href="images/4.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/4.jpeg" alt="Group exercise" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Group+Exercise'"></a>
+            <a href="images/5.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/5.jpeg" alt="Morning drill" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Morning+Drill'"></a>
+            <a href="images/6.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/6.jpeg" alt="Coach mentoring" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Coach+Mentoring'"></a>
+            <a href="images/7.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/7.jpeg" alt="Training session" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Training+Session'"></a>
         </div>
-        
     </div>
 </section>
 
@@ -369,7 +372,7 @@
     <div class="container" style="text-align: center;">
         <div class="section-title">Meet Your <span>Coach</span></div>
         <div style="display: flex; justify-content: center;">
-            <img src="images/4.jpeg" class="coach-img" alt="Coach Ganesh Sir">
+            <img src="images/4.jpeg" class="coach-img" alt="Coach Ganesh Sir" onerror="this.src='https://placehold.co/300x300/2c3e50/white?text=Ganesh+Sir'">
         </div>
         <h2 style="margin-top: 20px;">Ganesh Sir</h2>
         <p style="max-width: 600px; margin: 16px auto;">Experienced physical trainer specialized in defence & police preparation. Expert in running technique correction, endurance building, and strength development. Dedicated to transform Lakhisarai's youth.</p>
@@ -382,7 +385,7 @@
         <div class="section-title">Share Your <span>Selection</span></div>
         <div class="section-sub">If you have been selected in any government or defence exam, fill details and share with us. Your achievement may be featured in our Hall of Fame.</div>
         <div class="form-card">
-            <div class="form-grid" id="selectionFormFields">
+            <div class="form-grid">
                 <div class="input-group"><label>👤 Student Name *</label><input type="text" id="sel_name" placeholder="Full Name"></div>
                 <div class="input-group"><label>📱 WhatsApp Number *</label><input type="tel" id="sel_mobile" placeholder="Your WhatsApp"></div>
                 <div class="input-group"><label>🎯 Exam Name</label><select id="sel_exam"><option>Army</option><option>Bihar Police</option><option>SSC GD</option><option>Railway</option><option>Other Defence</option></select></div>
@@ -404,27 +407,25 @@
         <div class="section-title">Online <span>Admission</span> Form</div>
         <div class="section-sub">Join Today & Start Your Physical Training Journey. Submit via WhatsApp, our team will assist you.</div>
         <div class="form-card">
-            <form id="admissionForm">
-                <div class="form-grid">
-                    <div class="input-group"><label>Full Name *</label><input type="text" id="fullname" required></div>
-                    <div class="input-group"><label>Father's Name *</label><input type="text" id="fathername" required></div>
-                    <div class="input-group"><label>Mobile Number *</label><input type="tel" id="mobile" required></div>
-                    <div class="input-group"><label>WhatsApp Number *</label><input type="tel" id="whatsapp" required></div>
-                    <div class="input-group"><label>Date of Birth</label><input type="date" id="dob"></div>
-                    <div class="input-group"><label>Gender</label><select id="gender"><option>Male</option><option>Female</option><option>Other</option></select></div>
-                    <div class="input-group"><label>Village / City *</label><input type="text" id="village" required></div>
-                    <div class="input-group"><label>District *</label><input type="text" id="district" required></div>
-                    <div class="input-group"><label>Qualification</label><select id="qualification"><option>10th Pass</option><option>12th Pass</option><option>Graduate</option></select></div>
-                    <div class="input-group"><label>Height (cm)</label><input type="text" id="height" placeholder="cm"></div>
-                    <div class="input-group"><label>Weight (kg)</label><input type="text" id="weight" placeholder="kg"></div>
-                    <div class="input-group"><label>Course</label><select id="course"><option>Army Physical</option><option>Police Physical</option><option>Running Training</option><option>Strength & Fitness</option></select></div>
-                    <div class="input-group"><label>Preferred Batch</label><select id="batch"><option>Morning</option><option>Evening</option></select></div>
-                    <div class="input-group"><label>Membership Plan</label><select id="plan"><option>1 Month</option><option>3 Month</option><option>6 Month</option></select></div>
-                    <div class="input-group"><label>Goal (Army/Police/Fitness)</label><input type="text" id="goal"></div>
-                </div>
-                <div class="checkbox-group" style="margin: 20px 0 10px;"><input type="checkbox" id="agreeDeclare"> <label>I am physically fit & agree to academy rules, fees non-refundable, discipline mandatory.</label></div>
-                <button type="button" id="submitAdmissionWA" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Submit Admission on WhatsApp</button>
-            </form>
+            <div class="form-grid">
+                <div class="input-group"><label>Full Name *</label><input type="text" id="fullname"></div>
+                <div class="input-group"><label>Father's Name *</label><input type="text" id="fathername"></div>
+                <div class="input-group"><label>Mobile Number *</label><input type="tel" id="mobile"></div>
+                <div class="input-group"><label>WhatsApp Number *</label><input type="tel" id="whatsapp"></div>
+                <div class="input-group"><label>Date of Birth</label><input type="date" id="dob"></div>
+                <div class="input-group"><label>Gender</label><select id="gender"><option>Male</option><option>Female</option><option>Other</option></select></div>
+                <div class="input-group"><label>Village / City *</label><input type="text" id="village"></div>
+                <div class="input-group"><label>District *</label><input type="text" id="district"></div>
+                <div class="input-group"><label>Qualification</label><select id="qualification"><option>10th Pass</option><option>12th Pass</option><option>Graduate</option></select></div>
+                <div class="input-group"><label>Height (cm)</label><input type="text" id="height" placeholder="cm"></div>
+                <div class="input-group"><label>Weight (kg)</label><input type="text" id="weight" placeholder="kg"></div>
+                <div class="input-group"><label>Course</label><select id="course"><option>Army Physical</option><option>Police Physical</option><option>Running Training</option><option>Strength & Fitness</option></select></div>
+                <div class="input-group"><label>Preferred Batch</label><select id="batch"><option>Morning</option><option>Evening</option></select></div>
+                <div class="input-group"><label>Membership Plan</label><select id="plan"><option>1 Month</option><option>3 Month</option><option>6 Month</option></select></div>
+                <div class="input-group"><label>Goal (Army/Police/Fitness)</label><input type="text" id="goal"></div>
+            </div>
+            <div class="checkbox-group" style="margin: 20px 0 10px;"><input type="checkbox" id="agreeDeclare"> <label>I am physically fit & agree to academy rules, fees non-refundable, discipline mandatory.</label></div>
+            <button type="button" id="submitAdmissionWA" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Submit Admission on WhatsApp</button>
         </div>
     </div>
 </section>
@@ -451,20 +452,35 @@
     </div>
 </section>
 
-
+<!-- Footer -->
+<footer>
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+        <div><h3>🏋️ Lakhisarai Physical Academy</h3><p>Near K.R.K Ground, Lakhisarai, Bihar<br>📞 +91 77397 76471<br>✉️ contact@lpa.in</p></div>
+        <div><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="#" style="color:#ccc;">Home</a></li><li><a href="#admission-form" style="color:#ccc;">Admission</a></li><li><a href="#gallery" style="color:#ccc;">Gallery</a></li><li><a href="#selection-form" style="color:#ccc;">Success</a></li></ul></div>
+        <div><h4>Connect</h4><i class="fab fa-instagram fa-2x" style="margin-right: 15px;"></i><i class="fab fa-youtube fa-2x"></i><p style="margin-top: 12px;">Follow for updates</p></div>
+    </div>
+    <div class="container" style="text-align: center; margin-top: 40px;">© 2026 Lakhisarai Physical Academy | Strength • Speed • Discipline</div>
+</footer>
 
 <!-- Lightbox JS + WhatsApp scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 <script>
     const adminWA = "917739776471";
-    function sendWA(message) {
+    
+    function sendWAMessage(message) {
         window.open(`https://wa.me/${adminWA}?text=${encodeURIComponent(message)}`, '_blank');
     }
-    // Selection form
+    
+    // Selection Form - Clean format with proper newlines
     document.getElementById('sendSelectionWA').addEventListener('click', () => {
         let name = document.getElementById('sel_name').value.trim();
         let mobile = document.getElementById('sel_mobile').value.trim();
-        if(!name || !mobile) { alert("Please fill Name and WhatsApp Number"); return; }
+        
+        if(!name || !mobile) { 
+            alert("Please fill Name and WhatsApp Number"); 
+            return; 
+        }
+        
         let exam = document.getElementById('sel_exam').value;
         let post = document.getElementById('sel_post').value;
         let rank = document.getElementById('sel_rank').value;
@@ -472,10 +488,24 @@
         let village = document.getElementById('sel_village').value;
         let district = document.getElementById('sel_district').value;
         let pincode = document.getElementById('sel_pincode').value;
-        let msg = `🏅 *Selection Achievement* 🏅%0A%0AName: ${name}%0AMobile: ${mobile}%0AExam: ${exam}%0APost: ${post}%0ARank/Score: ${rank}%0AStatus: ${status}%0AVillage: ${village}%0ADistrict: ${district}%0APIN: ${pincode}%0A%0AThank you LPA!`;
-        sendWA(msg);
+        
+        // Clean message format - using \n for line breaks
+        let msg = "🏅 Selection Achievement 🏅\n\n";
+        msg += `Name: ${name}\n`;
+        msg += `Mobile: ${mobile}\n`;
+        msg += `Exam: ${exam}\n`;
+        msg += `Post: ${post}\n`;
+        msg += `Rank/Score: ${rank}\n`;
+        msg += `Status: ${status}\n`;
+        msg += `Village: ${village}\n`;
+        msg += `District: ${district}\n`;
+        msg += `PIN: ${pincode}\n\n`;
+        msg += `Thank you LPA!`;
+        
+        sendWAMessage(msg);
     });
-    // Admission form
+    
+    // Admission Form - Clean format
     document.getElementById('submitAdmissionWA').addEventListener('click', () => {
         let full = document.getElementById('fullname').value.trim();
         let father = document.getElementById('fathername').value.trim();
@@ -484,8 +514,16 @@
         let village = document.getElementById('village').value.trim();
         let district = document.getElementById('district').value.trim();
         let agree = document.getElementById('agreeDeclare').checked;
-        if(!full || !father || !mobile || !whats || !village || !district) { alert("Please fill required fields: Name, Father, Mobile, WhatsApp, Village, District"); return; }
-        if(!agree) { alert("You must agree to terms & conditions"); return; }
+        
+        if(!full || !father || !mobile || !whats || !village || !district) { 
+            alert("Please fill required fields: Name, Father, Mobile, WhatsApp, Village, District"); 
+            return; 
+        }
+        if(!agree) { 
+            alert("You must agree to terms & conditions"); 
+            return; 
+        }
+        
         let dob = document.getElementById('dob').value;
         let gender = document.getElementById('gender').value;
         let qual = document.getElementById('qualification').value;
@@ -495,8 +533,26 @@
         let batch = document.getElementById('batch').value;
         let plan = document.getElementById('plan').value;
         let goal = document.getElementById('goal').value;
-        let msg = `🏋️ *LPA Admission Request* 🏋️%0A%0A👤 Name: ${full}%0A👨 Father: ${father}%0A📞 Mobile: ${mobile}%0A💬 WhatsApp: ${whats}%0A📅 DOB: ${dob}%0A⚥ Gender: ${gender}%0A🏡 Village: ${village}%0A🗺️ District: ${district}%0A📚 Qualification: ${qual}%0A📏 Height: ${height}cm ⚖️ Weight: ${weight}kg%0A🎯 Course: ${course}%0A⏰ Batch: ${batch}%0A📆 Plan: ${plan}%0A🎯 Goal: ${goal}%0A✅ Agreed to academy terms.`;
-        sendWA(msg);
+        
+        let msg = "🏋️ LPA Admission Request 🏋️\n\n";
+        msg += `Name: ${full}\n`;
+        msg += `Father: ${father}\n`;
+        msg += `Mobile: ${mobile}\n`;
+        msg += `WhatsApp: ${whats}\n`;
+        if(dob) msg += `DOB: ${dob}\n`;
+        msg += `Gender: ${gender}\n`;
+        msg += `Village: ${village}\n`;
+        msg += `District: ${district}\n`;
+        msg += `Qualification: ${qual}\n`;
+        if(height) msg += `Height: ${height} cm\n`;
+        if(weight) msg += `Weight: ${weight} kg\n`;
+        msg += `Course: ${course}\n`;
+        msg += `Batch: ${batch}\n`;
+        msg += `Plan: ${plan}\n`;
+        if(goal) msg += `Goal: ${goal}\n\n`;
+        msg += `✅ Agreed to academy terms.`;
+        
+        sendWAMessage(msg);
     });
 </script>
 </body>

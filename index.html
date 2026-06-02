@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Lakhisarai Physical Academy | Best Defence Training Institute in Lakhisarai, Bihar</title>
-    <meta name="description" content="Lakhisarai Physical Academy - Premier institute for Army, Bihar Police, SSC GD training under Coach Ganesh Sir. 1000+ selections. Admission Open 2026.">
-    <meta name="keywords" content="Lakhisarai Physical Academy, Ganesh Sir, Army Training, Police Physical, SSC GD, K.R.K Ground, Lakhisarai Bihar">
-    <!-- Google Fonts -->
+    <title>Lakhisarai Physical Academy | Best Defence Training in Lakhisarai Bihar</title>
+    <meta name="description" content="Lakhisarai Physical Academy - Army, Bihar Police, SSC GD training under Coach Kumar Singh Sir. 1000+ selections. Admission Open 2026.">
+    <meta name="keywords" content="Lakhisarai Physical Academy, Kumar Singh Sir, Army Training, Police Physical, SSC GD, K.R.K Ground, Lakhisarai Bihar">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
@@ -32,10 +31,32 @@
             margin: 0 auto;
             padding: 0 30px;
         }
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #e0e0e0; border-radius: 10px; }
         ::-webkit-scrollbar-thumb { background: #e63946; border-radius: 10px; }
+
+        /* Top Social Bar */
+        .top-social-bar {
+            background: #1a2a3a;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .top-social-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin-left: 20px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .social-icons a:hover { color: #e63946; }
+        .contact-info i { margin-right: 5px; }
 
         /* Buttons */
         .btn {
@@ -80,15 +101,14 @@
             background: #128C7E;
             transform: scale(1.02);
         }
-        .btn-light {
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        .btn-outline-light:hover {
             background: white;
             color: #e63946;
-            border: 1px solid #e0e0e0;
-        }
-        .btn-light:hover {
-            background: #e63946;
-            color: white;
-            border-color: #e63946;
         }
 
         /* Floating Elements */
@@ -131,9 +151,9 @@
         .sticky-join:hover { transform: scale(1.05); }
 
         /* Hero Section */
-        /* Hero Section */
         .hero {
-            background: linear-gradient(125deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 100%), url('https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover fixed;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%), url('https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;
+            
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -144,23 +164,19 @@
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: 20px;
+            color: #1a2a3a;
         }
         .hero-content h1 span {
-            background: linear-gradient(135deg, #ff3b30, #ff9f4a);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent; 
+            color: #e63946;
         }
         .hero-badge {
             display: inline-block;
-            background: rgba(255,59,48,0.2);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(135deg, #e63946, #c1121f);
             padding: 8px 20px;
             border-radius: 50px;
             font-size: 0.85rem;
-            border: 1px solid rgba(255,59,48,0.5);
+            color: white;
             margin-bottom: 25px;
-            color: #e0e0e0;
         }
 
         /* Stats Section */
@@ -181,7 +197,6 @@
         .stat-number { font-size: 3rem; font-weight: 800; color: #e63946; }
         .stat-label { font-size: 1rem; color: #4a5568; margin-top: 10px; }
 
-        /* Section Titles */
         .section-title {
             font-size: 2.8rem;
             font-weight: 800;
@@ -198,7 +213,6 @@
             font-size: 1.1rem;
         }
 
-        /* Cards */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -226,7 +240,6 @@
         .card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #1a2a3a; }
         .card p { color: #64748b; line-height: 1.6; }
 
-        /* Coach Section */
         .coach-section {
             background: white;
             border-radius: 40px;
@@ -244,7 +257,6 @@
             box-shadow: 0 20px 35px rgba(0,0,0,0.1);
         }
 
-        /* Gallery */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -278,7 +290,6 @@
         .gallery-item:hover .gallery-overlay { opacity: 1; }
         .gallery-overlay p { color: white; font-weight: 600; }
 
-        /* Forms */
         .form-card {
             background: white;
             border-radius: 30px;
@@ -307,9 +318,6 @@
             outline: none;
             box-shadow: 0 0 0 3px rgba(230,57,70,0.1);
         }
-        input::placeholder { color: #a0aec0; }
-
-        /* Map */
         .map-frame {
             width: 100%;
             border-radius: 25px;
@@ -318,18 +326,12 @@
             border: none;
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
-
-        /* Footer */
         footer {
             background: #1a2a3a;
             color: #cbd5e1;
             padding: 50px 0 30px;
         }
-
-        /* Section Backgrounds */
-        .bg-light-gray {
-            background: #f8f9fa;
-        }
+        .bg-light-gray { background: #f8f9fa; }
 
         @media (max-width: 768px) {
             .hero-content h1 { font-size: 2.5rem; }
@@ -337,33 +339,48 @@
             .coach-section { padding: 30px; }
             .coach-img { width: 180px; height: 180px; }
             .form-card { padding: 25px; }
+            .top-social-bar .container { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
+
+<!-- Top Social Bar -->
+<div class="top-social-bar">
+    <div class="container">
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i> Near K.R.K Ground, Lakhisarai, Bihar
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1EeBjBqrUQ/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/lakhisarai_physical_academy?igsh=a2d5OGo0MHBwcmRo" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@lakhisaraiphysicalacademy?si=KN38_FtlNgP6ekjx" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="tel:+917739776471"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </div>
+</div>
 
 <!-- Floating Buttons -->
 <div class="floating-wa"><a href="https://wa.me/917739776471?text=Hello%20Lakhisarai%20Physical%20Academy" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
 <div class="sticky-join"><a href="#admission-form"><i class="fas fa-arrow-right"></i> Join Now</a></div>
 
 <!-- Hero Section -->
-<!-- Hero Section -->
 <section class="hero">
     <div class="container">
         <div class="hero-content" data-aos="fade-up">
             <div class="hero-badge"><i class="fas fa-medal"></i> India's Most Trusted Physical Academy</div>
-            <h1><span style="color: #fff;">Lakhisarai</span> <span>Physical Academy</span></h1>
-            <p style="font-size: 1.4rem; margin: 20px 0; color: #ff9f4a;">⚡ Build Strength. Build Speed. Build Discipline. ⚡</p>
-            <p style="font-size: 1.1rem; max-width: 600px; margin-bottom: 30px; color: #ccc;">Professional Physical Training for Army, Police, SSC GD & Defence Exams in Lakhisarai, Bihar</p>
+            <h1>Lakhisarai <span>Physical Academy</span></h1>
+            <p style="font-size: 1.4rem; margin: 20px 0; color: #e63946;">⚡ Build Strength. Build Speed. Build Discipline. ⚡</p>
+            <p style="font-size: 1.1rem; max-width: 600px; margin-bottom: 30px; color: #4a5568;">Professional Physical Training for Army, Police, SSC GD & Defence Exams in Lakhisarai, Bihar</p>
             <div style="display: flex; gap: 20px; flex-wrap: wrap;">
                 <a href="tel:+917739776471" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
                 <a href="https://wa.me/917739776471?text=Hello%20Sir" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
+                <a href="#selection-form" class="btn btn-outline"><i class="fas fa-share-alt"></i> Share Your Selection on WhatsApp</a>
                 <a href="#admission-form" class="btn btn-outline"><i class="fas fa-pen-alt"></i> Apply for Admission</a>
             </div>
         </div>
     </div>
 </section>
-
 
 <!-- Statistics Section -->
 <section class="stats-section">
@@ -389,33 +406,6 @@
         </div>
     </div>
 </section>
-
-<!-- Coach Ganesh Sir Highlight -->
-<section style="padding: 40px 0;">
-    <div class="container">
-        <div class="coach-section" data-aos="zoom-in">
-            <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: center;">
-                <div style="flex: 1; text-align: center;">
-                    <img src="images/4.jpeg" class="coach-img" alt="Coach Ganesh Sir" onerror="this.src='https://placehold.co/400x400/1a2a3a/e63946?text=Ganesh+Sir'">
-                    <div style="margin-top: 20px;"><span style="background: #e63946; padding: 5px 15px; border-radius: 30px; font-size: 0.8rem; color:white;">🏆 Master Trainer</span></div>
-                </div>
-                <div style="flex: 2;">
-                    <h2 style="font-size: 2.5rem; color: #e63946;">Ganesh Kumar Singh</h2>
-                    <p style="font-size: 1rem; margin: 15px 0; color: #4a5568;">Founder & Head Coach, Lakhisarai Physical Academy</p>
-                    <p style="line-height: 1.7; margin-bottom: 20px; color: #2d3a4a;">Coach Ganesh Sir is a certified physical instructor with over 8 years of experience in defence physical coaching. He has personally mentored <strong>1000+ candidates</strong> for Indian Army, Bihar Police, SSC GD, and other forces. His unique training methodology focuses on individual strengths and weakness elimination.</p>
-                    <ul style="list-style: none; margin-bottom: 25px;">
-                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Running Technique & Stamina Specialist</li>
-                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Strength & Endurance Programming Expert</li>
-                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Mock Physical Test Conducting Authority</li>
-                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Individualized Diet & Recovery Plans</li>
-                    </ul>
-                    <a href="https://wa.me/917739776471?text=Respected%20Ganesh%20Sir" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Talk to Ganesh Sir</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Selection Form -->
 <section id="selection-form" style="padding: 80px 0;">
     <div class="container">
@@ -438,13 +428,38 @@
     </div>
 </section>
 
+<!-- Coach Kumar Singh Sir Highlight -->
+<section style="padding: 40px 0;">
+    <div class="container">
+        <div class="coach-section" data-aos="zoom-in">
+            <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: center;">
+                <div style="flex: 1; text-align: center;">
+                    <img src="images/4.jpeg" class="coach-img" alt="Coach Kumar Singh Sir" onerror="this.src='https://placehold.co/400x400/1a2a3a/e63946?text=Kumar+Singh+Sir'">
+                    <div style="margin-top: 20px;"><span style="background: #e63946; padding: 5px 15px; border-radius: 30px; font-size: 0.8rem; color:white;">🏆 Master Trainer</span></div>
+                </div>
+                <div style="flex: 2;">
+                    <h2 style="font-size: 2.5rem; color: #e63946;">Kumar Singh Sir</h2>
+                    <p style="font-size: 1rem; margin: 15px 0; color: #4a5568;">Founder & Head Coach, Lakhisarai Physical Academy</p>
+                    <p style="line-height: 1.7; margin-bottom: 20px; color: #2d3a4a;">Coach Kumar Singh Sir is a certified physical instructor with over 8 years of experience in defence physical coaching. He has personally mentored <strong>1000+ candidates</strong> for Indian Army, Bihar Police, SSC GD, and other forces. His unique training methodology focuses on individual strengths and weakness elimination.</p>
+                    <ul style="list-style: none; margin-bottom: 25px;">
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Running Technique & Stamina Specialist</li>
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Strength & Endurance Programming Expert</li>
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Mock Physical Test Conducting Authority</li>
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Individualized Diet & Recovery Plans</li>
+                    </ul>
+                    <a href="https://wa.me/917739776471?text=Respected%20Kumar%20Singh%20Sir" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Talk to Kumar Singh Sir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Why Choose Us -->
 <section class="bg-light-gray" style="padding: 80px 0;">
     <div class="container">
         <div class="section-title" data-aos="fade-up">Why <span>Choose Us</span></div>
         <div class="cards-grid">
-            <div class="card" data-aos="fade-up"><i class="fas fa-chalkboard-user"></i><h3>Expert Coaching</h3><p>Train under Ganesh Sir with 8+ years of defence training expertise.</p></div>
+            <div class="card" data-aos="fade-up"><i class="fas fa-chalkboard-user"></i><h3>Expert Coaching</h3><p>Train under Kumar Singh Sir with 8+ years of defence training expertise.</p></div>
             <div class="card" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-running"></i><h3>Daily Mock Tests</h3><p>Weekly physical efficiency tests as per Army/Police standards.</p></div>
             <div class="card" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-users"></i><h3>Small Batches</h3><p>Personal attention with limited students per batch.</p></div>
             <div class="card" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-map-marked-alt"></i><h3>K.R.K Ground</h3><p>Authentic open ground for running & obstacle training.</p></div>
@@ -475,12 +490,13 @@
     <div class="container">
         <div class="section-title" data-aos="fade-up">Success <span>Stories</span></div>
         <div class="cards-grid">
-            <div class="card" data-aos="flip-up"><i class="fas fa-quote-left"></i><p>“Ganesh Sir's training changed my life. Cleared Bihar Police Physical in first attempt with top rank.”</p><h4 style="margin-top: 15px;">Rahul Kumar</h4><span style="color:#e63946;">Bihar Police 2025</span></div>
+            <div class="card" data-aos="flip-up"><i class="fas fa-quote-left"></i><p>“Kumar Singh Sir's training changed my life. Cleared Bihar Police Physical in first attempt with top rank.”</p><h4 style="margin-top: 15px;">Rahul Kumar</h4><span style="color:#e63946;">Bihar Police 2025</span></div>
             <div class="card" data-aos="flip-up" data-aos-delay="100"><i class="fas fa-quote-left"></i><p>“Best decision was to join LPA. Daily running made me pass Army GD with ease. Thank you Sir!”</p><h4 style="margin-top: 15px;">Vikash Singh</h4><span style="color:#e63946;">Indian Army 2024</span></div>
-            <div class="card" data-aos="flip-up" data-aos-delay="200"><i class="fas fa-quote-left"></i><p>“From zero stamina to 1600m in 5:20min – Ganesh Sir is amazing. Selected SSC GD.”</p><h4 style="margin-top: 15px;">Sonam Kumari</h4><span style="color:#e63946;">SSC GD 2025</span></div>
+            <div class="card" data-aos="flip-up" data-aos-delay="200"><i class="fas fa-quote-left"></i><p>“From zero stamina to 1600m in 5:20min – Kumar Singh Sir is amazing. Selected SSC GD.”</p><h4 style="margin-top: 15px;">Sonam Kumari</h4><span style="color:#e63946;">SSC GD 2025</span></div>
         </div>
     </div>
 </section>
+
 
 
 <!-- Admission Form -->
@@ -536,8 +552,12 @@
 <footer>
     <div class="container" style="text-align: center;">
         <p><strong>Lakhisarai Physical Academy</strong> | Near K.R.K Ground, Lakhisarai, Bihar | 📞 +91 77397 76471</p>
-        <p style="margin-top: 15px;">© 2026 LPA | Training for Army | Police | SSC | Defence</p>
-        <div style="margin-top: 20px;"><i class="fab fa-instagram fa-2x" style="margin: 0 12px; cursor:pointer;"></i><i class="fab fa-youtube fa-2x" style="cursor:pointer;"></i></div>
+        <div style="margin: 15px 0;">
+            <a href="https://www.facebook.com/share/1EeBjBqrUQ/" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://www.instagram.com/lakhisarai_physical_academy?igsh=a2d5OGo0MHBwcmRo" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://youtube.com/@lakhisaraiphysicalacademy?si=KN38_FtlNgP6ekjx" target="_blank" style="color: white; margin: 0 10px;"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+        <p>© 2026 LPA | Training for Army | Police | SSC | Defence</p>
     </div>
 </footer>
 

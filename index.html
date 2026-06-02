@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Lakhisarai Physical Academy | Premier Fitness & Defence Training in Lakhisarai, Bihar</title>
-    <meta name="description" content="Lakhisarai Physical Academy: Professional Army, Police, SSC GD training by Coach Ganesh Sir. Modern facilities near K.R.K Ground. Admission open with hostel option.">
-    <meta name="keywords" content="Lakhisarai Physical Academy, Army Training Bihar, Police Physical, SSC GD, Ganesh Sir, K.R.K Ground, Fitness Academy">
-    <!-- Google Fonts + Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Lakhisarai Physical Academy | Best Defence Training Institute in Lakhisarai, Bihar</title>
+    <meta name="description" content="Lakhisarai Physical Academy - Premier institute for Army, Bihar Police, SSC GD training under Coach Ganesh Sir. 1000+ selections. Admission Open 2026.">
+    <meta name="keywords" content="Lakhisarai Physical Academy, Ganesh Sir, Army Training, Police Physical, SSC GD, K.R.K Ground, Lakhisarai Bihar">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Lightbox for gallery -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -18,380 +18,417 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: #fefcf5;
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fc;
             color: #1a2a3a;
             scroll-behavior: smooth;
         }
-        :root {
-            --primary: #e63946;
-            --primary-dark: #bc2f3e;
-            --secondary: #f4a261;
-            --dark-bg: #0b2b26;
-            --light-bg: #f9f7f3;
-            --accent-gold: #e9c46a;
-            --shadow-soft: 0 20px 35px -12px rgba(0,0,0,0.1);
-            --shadow-hover: 0 25px 40px -16px rgba(0,0,0,0.2);
+        ::selection {
+            background: #e63946;
+            color: white;
         }
         .container {
             max-width: 1280px;
             margin: 0 auto;
-            padding: 0 28px;
+            padding: 0 30px;
         }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #e0e0e0; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #e63946; border-radius: 10px; }
+
         /* Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 12px;
             padding: 14px 32px;
-            border-radius: 60px;
+            border-radius: 50px;
             font-weight: 700;
             text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             font-size: 1rem;
-            border: none;
+            letter-spacing: 0.5px;
             cursor: pointer;
+            border: none;
         }
         .btn-primary {
-            background: var(--primary);
+            background: linear-gradient(135deg, #e63946, #c1121f);
             color: white;
-            box-shadow: 0 8px 18px rgba(230,57,70,0.3);
+            box-shadow: 0 10px 25px -5px rgba(230,57,70,0.3);
         }
         .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 25px -8px rgba(230,57,70,0.5);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 20px 35px -8px rgba(230,57,70,0.4);
         }
-        .btn-outline-light {
+        .btn-outline {
             background: transparent;
-            border: 2px solid white;
-            color: white;
+            border: 2px solid #e63946;
+            color: #e63946;
         }
-        .btn-outline-light:hover {
-            background: white;
-            color: var(--primary);
+        .btn-outline:hover {
+            background: #e63946;
+            color: white;
+            transform: translateY(-2px);
         }
         .btn-wa {
             background: #25D366;
             color: white;
+            box-shadow: 0 10px 25px -5px rgba(37,211,102,0.3);
         }
         .btn-wa:hover {
             background: #128C7E;
             transform: scale(1.02);
         }
-        /* Floating elements */
+        .btn-light {
+            background: white;
+            color: #e63946;
+            border: 1px solid #e0e0e0;
+        }
+        .btn-light:hover {
+            background: #e63946;
+            color: white;
+            border-color: #e63946;
+        }
+
+        /* Floating Elements */
         .floating-wa {
             position: fixed;
-            bottom: 28px;
-            right: 28px;
-            background: #25D366;
-            width: 64px;
-            height: 64px;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            width: 65px;
+            height: 65px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 34px;
-            box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+            font-size: 35px;
             z-index: 1000;
-            transition: 0.2s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            animation: pulse 2s infinite;
         }
-        .floating-wa:hover { transform: scale(1.08); }
+        .floating-wa a { color: white; }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
         .sticky-join {
             position: fixed;
-            bottom: 28px;
-            left: 28px;
-            background: var(--primary);
-            padding: 12px 24px;
+            bottom: 30px;
+            left: 30px;
+            background: linear-gradient(135deg, #e63946, #c1121f);
+            padding: 14px 28px;
             border-radius: 60px;
             font-weight: 800;
             z-index: 1000;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: 0.3s;
         }
         .sticky-join a { color: white; text-decoration: none; display: flex; gap: 8px; align-items: center; }
-        /* Hero */
+        .sticky-join:hover { transform: scale(1.05); }
+
+        /* Hero Section */
+        /* Hero Section */
         .hero {
-            background: linear-gradient(125deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.65) 100%), url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
-            background-size: cover;
-            color: white;
-            padding: 130px 0 150px;
-            text-align: center;
+            background: linear-gradient(125deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 100%), url('https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
         }
-        .hero h1 {
-            font-size: 3.8rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            background: linear-gradient(135deg, #fff, #ffcd94);
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .hero-content h1 span {
+            background: linear-gradient(135deg, #ff3b30, #ff9f4a);
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
+            color: transparent; 
         }
-        .hero .tagline {
-            font-size: 1.7rem;
-            font-weight: 600;
-            margin: 18px 0;
-            color: var(--secondary);
-        }
-        /* sections */
-        section {
-            padding: 90px 0;
-        }
-        .section-title {
-            font-size: 2.6rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .section-title span {
-            color: var(--primary);
-            position: relative;
+        .hero-badge {
             display: inline-block;
+            background: rgba(255,59,48,0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255,59,48,0.5);
+            margin-bottom: 25px;
+            color: #e0e0e0;
         }
+
+        /* Stats Section */
+        .stats-section {
+            background: white;
+            padding: 60px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 25px;
+            transition: 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+        .stat-card:hover { transform: translateY(-5px); border-color: #e63946; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .stat-number { font-size: 3rem; font-weight: 800; color: #e63946; }
+        .stat-label { font-size: 1rem; color: #4a5568; margin-top: 10px; }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #1a2a3a;
+        }
+        .section-title span { color: #e63946; }
         .section-sub {
             text-align: center;
-            max-width: 720px;
-            margin: 0 auto 55px;
-            color: #4a5b6e;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            color: #64748b;
             font-size: 1.1rem;
         }
+
+        /* Cards */
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
         .card {
             background: white;
-            border-radius: 32px;
-            padding: 32px 24px;
-            box-shadow: var(--shadow-soft);
-            transition: all 0.25s;
+            border-radius: 25px;
+            padding: 35px 25px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.4s;
             text-align: center;
-            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
         }
-        .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
-        .card i { font-size: 2.8rem; color: var(--primary); margin-bottom: 20px; }
-        /* Gallery Grid */
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #e63946;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #e63946;
+            margin-bottom: 20px;
+        }
+        .card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #1a2a3a; }
+        .card p { color: #64748b; line-height: 1.6; }
+
+        /* Coach Section */
+        .coach-section {
+            background: white;
+            border-radius: 40px;
+            margin: 40px 0;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+        .coach-img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #e63946;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+        }
+
+        /* Gallery */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 28px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin: 40px 0;
         }
         .gallery-item {
-            border-radius: 28px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: var(--shadow-soft);
-            transition: 0.3s;
-            cursor: pointer;
+            height: 260px;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
         .gallery-item img {
             width: 100%;
-            height: 260px;
+            height: 100%;
             object-fit: cover;
-            transition: 0.4s;
-            display: block;
+            transition: 0.5s;
         }
-        .gallery-item:hover img { transform: scale(1.05); }
-        .gallery-item:hover { box-shadow: var(--shadow-hover); }
-        /* form style */
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay p { color: white; font-weight: 600; }
+
+        /* Forms */
         .form-card {
             background: white;
-            border-radius: 48px;
-            padding: 40px;
-            box-shadow: var(--shadow-soft);
+            border-radius: 30px;
+            padding: 45px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
         }
         .form-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 22px;
+            gap: 25px;
         }
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .input-group label { font-weight: 700; font-size: 0.85rem; color: #1e2f3e; }
-        input, select, textarea {
+        .input-group { display: flex; flex-direction: column; gap: 8px; }
+        .input-group label { font-weight: 700; font-size: 0.85rem; color: #e63946; letter-spacing: 0.5px; }
+        input, select {
             padding: 14px 18px;
-            border-radius: 28px;
-            border: 1.5px solid #e2e8f0;
+            border-radius: 15px;
+            border: 1.5px solid #e0e0e0;
+            background: white;
+            color: #1a2a3a;
             font-family: inherit;
-            font-size: 0.95rem;
             transition: 0.2s;
-            background: #fff;
         }
         input:focus, select:focus {
-            border-color: var(--primary);
+            border-color: #e63946;
             outline: none;
-            box-shadow: 0 0 0 3px rgba(230,57,70,0.2);
+            box-shadow: 0 0 0 3px rgba(230,57,70,0.1);
         }
-        .checkbox-group {
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px;
-        }
-        footer {
-            background: #0a1c1c;
-            color: #cbd5e1;
-            padding: 55px 0 35px;
-        }
-        @media (max-width: 760px) {
-            .hero h1 { font-size: 2.3rem; }
-            .hero .tagline { font-size: 1.2rem; }
-            .section-title { font-size: 2rem; }
-            .form-card { padding: 28px; }
-        }
+        input::placeholder { color: #a0aec0; }
+
+        /* Map */
         .map-frame {
             width: 100%;
-            border-radius: 32px;
-            height: 320px;
-            border: none;
+            border-radius: 25px;
+            height: 350px;
             margin-top: 25px;
-            box-shadow: var(--shadow-soft);
+            border: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
-        .coach-img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid var(--primary);
-            box-shadow: 0 15px 25px -8px rgba(0,0,0,0.2);
+
+        /* Footer */
+        footer {
+            background: #1a2a3a;
+            color: #cbd5e1;
+            padding: 50px 0 30px;
         }
-        /* fallback image style */
-        img {
-            background-color: #e2e8f0;
+
+        /* Section Backgrounds */
+        .bg-light-gray {
+            background: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .coach-section { padding: 30px; }
+            .coach-img { width: 180px; height: 180px; }
+            .form-card { padding: 25px; }
         }
     </style>
 </head>
 <body>
 
 <!-- Floating Buttons -->
-<div class="floating-wa">
-    <a href="https://wa.me/917739776471?text=Hello%20Lakhisarai%20Physical%20Academy%2C%20I%20want%20to%20know%20about%20admission." target="_blank" style="color:white;"><i class="fab fa-whatsapp"></i></a>
-</div>
-<div class="sticky-join">
-    <a href="#admission-form"><i class="fas fa-arrow-right"></i> Join Now</a>
-</div>
+<div class="floating-wa"><a href="https://wa.me/917739776471?text=Hello%20Lakhisarai%20Physical%20Academy" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+<div class="sticky-join"><a href="#admission-form"><i class="fas fa-arrow-right"></i> Join Now</a></div>
 
+<!-- Hero Section -->
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
-        <h1>Lakhisarai Physical Academy</h1>
-        <div class="tagline">⚡ Build Strength. Build Speed. Build Discipline. Build Your Future. ⚡</div>
-        <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">Professional Physical Training for Army, Police & SSC Preparation in Lakhisarai, Bihar</p>
-        <p style="margin: 16px 0 20px;"><i class="fas fa-map-marker-alt"></i> Near K.R.K Ground, Lakhisarai, Bihar – 811311</p>
-        <div class="hero-buttons" style="display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-            <a href="tel:+917739776471" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
-            <a href="https://wa.me/917739776471?text=Hello%20Sir%2C%20I%20am%20interested%20in%20physical%20training" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
-            <a href="#admission-form" class="btn btn-outline-light"><i class="fas fa-pen-alt"></i> Apply for Admission</a>
-        </div>
-    </div>
-</section>
-
-<!-- About Snapshot Modern -->
-<section style="background: var(--light-bg);">
-    <div class="container">
-        <div class="section-title">About <span>Academy</span></div>
-        <div class="section-sub">Lakhisarai Physical Academy is a premier institute blending modern fitness science with defence preparation.</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 45px; align-items: center; justify-content: center;">
-            <div style="flex:1; min-width: 260px; background: white; border-radius: 38px; padding: 38px; box-shadow: var(--shadow-soft);">
-                <p style="font-size:1.05rem; line-height:1.5"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Experienced coach Ganesh Sir</strong> with years of defence training track record.<br>
-                <i class="fas fa-check-circle" style="color:var(--primary);"></i> Special focus on discipline, endurance, strength, and speed development.<br>
-                <i class="fas fa-check-circle" style="color:var(--primary);"></i> Army Physical • Bihar Police Physical • SSC GD Fitness • Running & stamina.</p>
-            </div>
-            <div style="flex:1; text-align: center;">
-                <img src="images/6.jpeg" alt="Coach Training" style="width:100%; border-radius: 48px; box-shadow: var(--shadow-soft);" onerror="this.src='https://placehold.co/500x350/2a4b44/white?text=Coach+Ganesh+Sir'">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge"><i class="fas fa-medal"></i> India's Most Trusted Physical Academy</div>
+            <h1><span style="color: #fff;">Lakhisarai</span> <span>Physical Academy</span></h1>
+            <p style="font-size: 1.4rem; margin: 20px 0; color: #ff9f4a;">⚡ Build Strength. Build Speed. Build Discipline. ⚡</p>
+            <p style="font-size: 1.1rem; max-width: 600px; margin-bottom: 30px; color: #ccc;">Professional Physical Training for Army, Police, SSC GD & Defence Exams in Lakhisarai, Bihar</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <a href="tel:+917739776471" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/917739776471?text=Hello%20Sir" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
+                <a href="#admission-form" class="btn btn-outline"><i class="fas fa-pen-alt"></i> Apply for Admission</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Choose Us -->
-<section>
+
+<!-- Statistics Section -->
+<section class="stats-section">
     <div class="container">
-        <div class="section-title">Why <span>Choose Us</span></div>
         <div class="cards-grid">
-            <div class="card"><i class="fas fa-medal"></i><h3>🏅 Expert Trainer</h3><p>Ganesh Sir, specialist in defence physical prep.</p></div>
-            <div class="card"><i class="fas fa-running"></i><h3>🏃 Daily Running Sessions</h3><p>Morning & evening batches at K.R.K Ground.</p></div>
-            <div class="card"><i class="fas fa-heartbeat"></i><h3>💪 Strength & Conditioning</h3><p>Modern endurance & strength protocols.</p></div>
-            <div class="card"><i class="fas fa-bullseye"></i><h3>🎯 Exam-Focused Drills</h3><p>Army, Police, SSC GD selection standards.</p></div>
-            <div class="card"><i class="fas fa-map-marked-alt"></i><h3>📍 Prime Location</h3><p>Near K.R.K Ground, Lakhisarai.</p></div>
-            <div class="card"><i class="fas fa-chart-simple"></i><h3>📈 Proven Selections</h3><p>Consistent results in defence & police exams.</p></div>
+            <div class="stat-card" data-aos="zoom-in"><div class="stat-number">1000+</div><div class="stat-label">Students Trained</div></div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100"><div class="stat-number">150+</div><div class="stat-label">Army Selections</div></div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200"><div class="stat-number">200+</div><div class="stat-label">Police Selections</div></div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300"><div class="stat-number">8+</div><div class="stat-label">Years of Excellence</div></div>
         </div>
     </div>
 </section>
 
-<!-- Training Programs -->
-<section style="background: #fef7e8;">
+<!-- About Section -->
+<section style="padding: 80px 0;">
     <div class="container">
-        <div class="section-title">Our <span>Training Programs</span></div>
+        <div class="section-title" data-aos="fade-up">About <span>Academy</span></div>
+        <div class="section-sub" data-aos="fade-up">Lakhisarai Physical Academy - Where Champions Are Made</div>
         <div class="cards-grid">
-            <div class="card" style="text-align:left;"><i class="fas fa-user-graduate"></i><h3>Army Physical</h3><p>Running, push-ups, stamina drills as per selection standards.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card" style="text-align:left;"><i class="fas fa-shield-virus"></i><h3>Bihar Police Physical</h3><p>High-intensity running, obstacle & endurance training.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card" style="text-align:left;"><i class="fas fa-tachometer-alt"></i><h3>SSC GD Fitness</h3><p>Speed, endurance, exam-based physical standards.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card" style="text-align:left;"><i class="fas fa-shoe-prints"></i><h3>Running & Sprint Training</h3><p>100m, 400m, long-distance technique improvement.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
-            <div class="card" style="text-align:left;"><i class="fas fa-dumbbell"></i><h3>Strength & Fitness</h3><p>Full-body workout, muscle endurance development.</p><a href="#admission-form" class="btn btn-primary" style="margin-top: 16px; padding: 10px 22px;">Join Now</a></div>
+            <div class="card" data-aos="flip-left"><i class="fas fa-flag-checkered"></i><h3>Our Legacy</h3><p>Established in 2018, LPA has become the most trusted physical training institute in Lakhisarai district, producing successful candidates for Army, Police, SSC GD, and Central Armed Police Forces.</p></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="100"><i class="fas fa-location-dot"></i><h3>Prime Location</h3><p>Located near the historic K.R.K Ground, Lakhisarai, our training ground offers authentic open-field experience perfect for defence preparation.</p></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="200"><i class="fas fa-bullhorn"></i><h3>Our Mission</h3><p>To empower youth of rural Bihar with world-class physical training and make them ready for defence services, building a strong, disciplined generation.</p></div>
         </div>
     </div>
 </section>
 
-<!-- 🖼️ Gallery Section (Enhanced) -->
-<section id="gallery">
+<!-- Coach Ganesh Sir Highlight -->
+<section style="padding: 40px 0;">
     <div class="container">
-        <div class="section-title">Training <span>Gallery</span></div>
-        <div class="section-sub">Witness real action – running drills, strength workouts, group practice & campus life</div>
-        <div class="gallery-grid">
-            <a href="images/1.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/1.jpeg" alt="Running practice" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Running+Practice'"></a>   
-            <a href="images/2.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/2.jpeg" alt="Strength drills" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Strength+Drills'"></a>
-            <a href="images/3.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/3.jpeg" alt="Obstacle training" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Obstacle+Training'"></a>
-            <a href="images/4.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/4.jpeg" alt="Group exercise" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Group+Exercise'"></a>
-            <a href="images/5.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/5.jpeg" alt="Morning drill" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Morning+Drill'"></a>
-            <a href="images/6.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/6.jpeg" alt="Coach mentoring" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Coach+Mentoring'"></a>
-            <a href="images/7.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/7.jpeg" alt="Training session" onerror="this.src='https://placehold.co/600x400/2c3e50/white?text=Training+Session'"></a>
+        <div class="coach-section" data-aos="zoom-in">
+            <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: center;">
+                <div style="flex: 1; text-align: center;">
+                    <img src="images/4.jpeg" class="coach-img" alt="Coach Ganesh Sir" onerror="this.src='https://placehold.co/400x400/1a2a3a/e63946?text=Ganesh+Sir'">
+                    <div style="margin-top: 20px;"><span style="background: #e63946; padding: 5px 15px; border-radius: 30px; font-size: 0.8rem; color:white;">🏆 Master Trainer</span></div>
+                </div>
+                <div style="flex: 2;">
+                    <h2 style="font-size: 2.5rem; color: #e63946;">Ganesh Kumar Singh</h2>
+                    <p style="font-size: 1rem; margin: 15px 0; color: #4a5568;">Founder & Head Coach, Lakhisarai Physical Academy</p>
+                    <p style="line-height: 1.7; margin-bottom: 20px; color: #2d3a4a;">Coach Ganesh Sir is a certified physical instructor with over 8 years of experience in defence physical coaching. He has personally mentored <strong>1000+ candidates</strong> for Indian Army, Bihar Police, SSC GD, and other forces. His unique training methodology focuses on individual strengths and weakness elimination.</p>
+                    <ul style="list-style: none; margin-bottom: 25px;">
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Running Technique & Stamina Specialist</li>
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Strength & Endurance Programming Expert</li>
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Mock Physical Test Conducting Authority</li>
+                        <li><i class="fas fa-check-circle" style="color: #e63946; margin-right: 10px;"></i> Individualized Diet & Recovery Plans</li>
+                    </ul>
+                    <a href="https://wa.me/917739776471?text=Respected%20Ganesh%20Sir" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Talk to Ganesh Sir</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Testimonials + Achievements -->
-<section style="background: var(--light-bg);">
+<!-- Selection Form -->
+<section id="selection-form" style="padding: 80px 0;">
     <div class="container">
-        <div class="section-title">Success <span>Stories</span></div>
-        <div class="cards-grid">
-            <div class="card"><i class="fas fa-quote-right"></i><p>“Ganesh Sir's training boosted my stamina and confidence. Selected in Bihar Police with flying colours!”</p><h4>- Rahul Kumar</h4><span>Bihar Police</span></div>
-            <div class="card"><i class="fas fa-quote-right"></i><p>“Best academy for Army physical. Daily sprint and endurance drills made me achieve my dream.”</p><h4>- Vikash Singh</h4><span>Indian Army</span></div>
-            <div class="card"><i class="fas fa-quote-right"></i><p>“SSC GD selection was possible because of structured training and morning batches.”</p><h4>- Anjali Kumari</h4><span>SSC GD</span></div>
-        </div>
-        <div style="text-align: center; margin-top: 35px;"><i class="fas fa-users" style="color:var(--primary); font-size: 2rem;"></i> <span style="font-weight:800;">1000+ Students Trained | Multiple Defence Selections</span></div>
-    </div>
-</section>
-
-<!-- Coach Intro Section Modern -->
-<section>
-    <div class="container" style="text-align: center;">
-        <div class="section-title">Meet Your <span>Coach</span></div>
-        <div style="display: flex; justify-content: center;">
-            <img src="images/4.jpeg" class="coach-img" alt="Coach Ganesh Sir" onerror="this.src='https://placehold.co/300x300/2c3e50/white?text=Ganesh+Sir'">
-        </div>
-        <h2 style="margin-top: 20px;">Ganesh Sir</h2>
-        <p style="max-width: 600px; margin: 16px auto;">Experienced physical trainer specialized in defence & police preparation. Expert in running technique correction, endurance building, and strength development. Dedicated to transform Lakhisarai's youth.</p>
-    </div>
-</section>
-
-<!-- Selection Submission Form (WhatsApp) -->
-<section id="selection-form" style="background: #faf3e0;">
-    <div class="container">
-        <div class="section-title">Share Your <span>Selection</span></div>
-        <div class="section-sub">If you have been selected in any government or defence exam, fill details and share with us. Your achievement may be featured in our Hall of Fame.</div>
-        <div class="form-card">
+        <div class="section-title" data-aos="fade-up">Share Your <span>Selection</span></div>
+        <div class="section-sub" data-aos="fade-up">Your achievement inspires thousands of aspirants</div>
+        <div class="form-card" data-aos="zoom-in">
             <div class="form-grid">
                 <div class="input-group"><label>👤 Student Name *</label><input type="text" id="sel_name" placeholder="Full Name"></div>
                 <div class="input-group"><label>📱 WhatsApp Number *</label><input type="tel" id="sel_mobile" placeholder="Your WhatsApp"></div>
-                <div class="input-group"><label>🎯 Exam Name</label><select id="sel_exam"><option>Army</option><option>Bihar Police</option><option>SSC GD</option><option>Railway</option><option>Other Defence</option></select></div>
-                <div class="input-group"><label>🏢 Post/Position</label><input type="text" id="sel_post" placeholder="Constable, Soldier GD"></div>
+                <div class="input-group"><label>🎯 Exam Name</label><select id="sel_exam"><option>Indian Army</option><option>Bihar Police</option><option>SSC GD</option><option>CRPF/CISF</option><option>Railway</option><option>Other Defence</option></select></div>
+                <div class="input-group"><label>🏢 Post/Position</label><input type="text" id="sel_post" placeholder="Soldier GD, Constable"></div>
                 <div class="input-group"><label>🏆 Rank/Score</label><input type="text" id="sel_rank" placeholder="Merit Rank / PET Qualified"></div>
-                <div class="input-group"><label>📊 Selection Status</label><select id="sel_status"><option>Selected</option><option>Waiting List</option><option>PET Qualified</option><option>Final Selection</option></select></div>
+                <div class="input-group"><label>📊 Selection Status</label><select id="sel_status"><option>Final Selection</option><option>PET Qualified</option><option>Written Qualified</option></select></div>
                 <div class="input-group"><label>📍 Village/City</label><input type="text" id="sel_village"></div>
                 <div class="input-group"><label>🏙️ District</label><input type="text" id="sel_district"></div>
                 <div class="input-group"><label>📮 PIN Code</label><input type="text" id="sel_pincode"></div>
@@ -401,12 +438,57 @@
     </div>
 </section>
 
-<!-- Ultimate Admission Form (WhatsApp integrated) -->
-<section id="admission-form">
+
+<!-- Why Choose Us -->
+<section class="bg-light-gray" style="padding: 80px 0;">
     <div class="container">
-        <div class="section-title">Online <span>Admission</span> Form</div>
-        <div class="section-sub">Join Today & Start Your Physical Training Journey. Submit via WhatsApp, our team will assist you.</div>
-        <div class="form-card">
+        <div class="section-title" data-aos="fade-up">Why <span>Choose Us</span></div>
+        <div class="cards-grid">
+            <div class="card" data-aos="fade-up"><i class="fas fa-chalkboard-user"></i><h3>Expert Coaching</h3><p>Train under Ganesh Sir with 8+ years of defence training expertise.</p></div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-running"></i><h3>Daily Mock Tests</h3><p>Weekly physical efficiency tests as per Army/Police standards.</p></div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-users"></i><h3>Small Batches</h3><p>Personal attention with limited students per batch.</p></div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-map-marked-alt"></i><h3>K.R.K Ground</h3><p>Authentic open ground for running & obstacle training.</p></div>
+            <div class="card" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-clock"></i><h3>Flexible Timing</h3><p>Morning (5:30 AM) & Evening (4:30 PM) batches available.</p></div>
+            <div class="card" data-aos="fade-up" data-aos-delay="500"><i class="fas fa-trophy"></i><h3>Proven Results</h3><p>150+ Army, 200+ Police selections in last 3 years.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" style="padding: 80px 0;">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">Training <span>Gallery</span></div>
+        <div class="section-sub" data-aos="fade-up">Witness the transformation journey</div>
+        <div class="gallery-grid">
+            <a href="images/1.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/1.jpeg" alt="Running" onerror="this.src='https://placehold.co/600x400/e0e0e0/e63946?text=Running'"><div class="gallery-overlay"><p>Morning Run Session</p></div></a>
+            <a href="images/2.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/2.jpeg" alt="Pushups" onerror="this.src='https://placehold.co/600x400/e0e0e0/e63946?text=Pushups'"><div class="gallery-overlay"><p>Strength Training</p></div></a>
+            <a href="images/3.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/3.jpeg" alt="Obstacle" onerror="this.src='https://placehold.co/600x400/e0e0e0/e63946?text=Obstacle'"><div class="gallery-overlay"><p>Obstacle Course</p></div></a>
+            <a href="images/4.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/4.jpeg" alt="Group" onerror="this.src='https://placehold.co/600x400/e0e0e0/e63946?text=Group'"><div class="gallery-overlay"><p>Group Training</p></div></a>
+            <a href="images/5.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/5.jpeg" alt="Coach" onerror="this.src='https://placehold.co/600x400/e0e0e0/e63946?text=Coach'"><div class="gallery-overlay"><p>Coach Mentoring</p></div></a>
+            <a href="images/6.jpeg" data-lightbox="gallery" class="gallery-item"><img src="images/6.jpeg" alt="Selection" onerror="this.src='https://placehold.co/600x400/e0e0e0/e63946?text=Selection'"><div class="gallery-overlay"><p>Selection Celebration</p></div></a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-light-gray" style="padding: 80px 0;">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">Success <span>Stories</span></div>
+        <div class="cards-grid">
+            <div class="card" data-aos="flip-up"><i class="fas fa-quote-left"></i><p>“Ganesh Sir's training changed my life. Cleared Bihar Police Physical in first attempt with top rank.”</p><h4 style="margin-top: 15px;">Rahul Kumar</h4><span style="color:#e63946;">Bihar Police 2025</span></div>
+            <div class="card" data-aos="flip-up" data-aos-delay="100"><i class="fas fa-quote-left"></i><p>“Best decision was to join LPA. Daily running made me pass Army GD with ease. Thank you Sir!”</p><h4 style="margin-top: 15px;">Vikash Singh</h4><span style="color:#e63946;">Indian Army 2024</span></div>
+            <div class="card" data-aos="flip-up" data-aos-delay="200"><i class="fas fa-quote-left"></i><p>“From zero stamina to 1600m in 5:20min – Ganesh Sir is amazing. Selected SSC GD.”</p><h4 style="margin-top: 15px;">Sonam Kumari</h4><span style="color:#e63946;">SSC GD 2025</span></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Admission Form -->
+<section id="admission-form" class="bg-light-gray" style="padding: 80px 0;">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">Online <span>Admission</span></div>
+        <div class="section-sub" data-aos="fade-up">Join Today & Start Your Physical Training Journey</div>
+        <div class="form-card" data-aos="zoom-in">
             <div class="form-grid">
                 <div class="input-group"><label>Full Name *</label><input type="text" id="fullname"></div>
                 <div class="input-group"><label>Father's Name *</label><input type="text" id="fathername"></div>
@@ -419,133 +501,71 @@
                 <div class="input-group"><label>Qualification</label><select id="qualification"><option>10th Pass</option><option>12th Pass</option><option>Graduate</option></select></div>
                 <div class="input-group"><label>Height (cm)</label><input type="text" id="height" placeholder="cm"></div>
                 <div class="input-group"><label>Weight (kg)</label><input type="text" id="weight" placeholder="kg"></div>
-                <div class="input-group"><label>Course</label><select id="course"><option>Army Physical</option><option>Police Physical</option><option>Running Training</option><option>Strength & Fitness</option></select></div>
-                <div class="input-group"><label>Preferred Batch</label><select id="batch"><option>Morning</option><option>Evening</option></select></div>
+                <div class="input-group"><label>Target Exam</label><select id="course"><option>Indian Army</option><option>Bihar Police</option><option>SSC GD</option><option>CRPF/CISF</option></select></div>
+                <div class="input-group"><label>Batch Preference</label><select id="batch"><option>Morning (5:30 AM)</option><option>Evening (4:30 PM)</option></select></div>
                 <div class="input-group"><label>Membership Plan</label><select id="plan"><option>1 Month</option><option>3 Month</option><option>6 Month</option></select></div>
-                <div class="input-group"><label>Goal (Army/Police/Fitness)</label><input type="text" id="goal"></div>
             </div>
-            <div class="checkbox-group" style="margin: 20px 0 10px;"><input type="checkbox" id="agreeDeclare"> <label>I am physically fit & agree to academy rules, fees non-refundable, discipline mandatory.</label></div>
-            <button type="button" id="submitAdmissionWA" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Submit Admission on WhatsApp</button>
+            <div class="checkbox-group" style="margin: 20px 0;"><input type="checkbox" id="agreeDeclare"> <label>I agree to all academy rules, fee policy, and terms.</label></div>
+            <button id="submitAdmissionWA" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Submit Admission on WhatsApp</button>
         </div>
     </div>
 </section>
 
 <!-- Location & Map -->
-<section style="background: #eef2f5;">
+<section style="padding: 80px 0;">
     <div class="container">
-        <div class="section-title">Visit <span>Us</span></div>
-        <div style="text-align: center;"><p><i class="fas fa-location-dot"></i> Near K.R.K Ground, Lakhisarai, Bihar – 811311</p>
-        <iframe class="map-frame" src="https://maps.google.com/maps?q=K.R.K%20Ground%20Lakhisarai%20Bihar&t=&z=15&output=embed" allowfullscreen></iframe>
-        <div style="margin-top: 30px;"><a href="https://maps.google.com/?q=K.R.K+Ground+Lakhisarai" class="btn btn-primary" target="_blank">Get Directions</a> <a href="tel:+917739776471" class="btn btn-wa" style="margin-left: 15px;">Call Now</a></div>
+        <div class="section-title" data-aos="fade-up">Visit <span>Us</span></div>
+        <div style="text-align: center;" data-aos="fade-up">
+            <p><i class="fas fa-map-pin"></i> Near K.R.K Ground, Station Road, Lakhisarai, Bihar – 811311</p>
+            <iframe class="map-frame" src="https://maps.google.com/maps?q=K.R.K%20Ground%20Lakhisarai%20Bihar&t=&z=15&output=embed" allowfullscreen></iframe>
+            <div style="margin-top: 25px;"><a href="https://maps.google.com/?q=K.R.K+Ground+Lakhisarai" class="btn btn-primary" target="_blank">Get Directions</a> <a href="tel:+917739776471" class="btn btn-wa" style="margin-left: 15px;">Call Now</a></div>
         </div>
     </div>
 </section>
 
 <!-- Final CTA -->
-<section style="background: var(--primary); color: white; padding: 60px 0;">
-    <div class="container" style="text-align: center;">
-        <h2 style="font-size: 2rem;">Admission Open Now – Join Lakhisarai Physical Academy Today!</h2>
-        <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center;">
-            <a href="https://wa.me/917739776471?text=I%20want%20to%20take%20admission%20in%20LPA" class="btn btn-outline-light"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
-            <a href="#admission-form" class="btn btn-outline-light"><i class="fas fa-calendar-alt"></i> Apply Now</a>
-        </div>
+<section style="background: linear-gradient(135deg, #e63946, #c1121f); padding: 60px 0; text-align: center;">
+    <div class="container">
+        <h2 style="font-size: 2rem; color: white;">Admission Open for 2026 Batch!</h2>
+        <p style="margin: 15px 0; color: rgba(255,255,255,0.9);">Limited seats available. Early bird discount offered.</p>
+        <a href="https://wa.me/917739776471?text=I%20want%20to%20enroll%20in%20LPA" class="btn" style="background: white; color: #e63946; border: none;"><i class="fab fa-whatsapp"></i> Enroll Now</a>
     </div>
 </section>
 
- 
+<!-- Footer -->
+<footer>
+    <div class="container" style="text-align: center;">
+        <p><strong>Lakhisarai Physical Academy</strong> | Near K.R.K Ground, Lakhisarai, Bihar | 📞 +91 77397 76471</p>
+        <p style="margin-top: 15px;">© 2026 LPA | Training for Army | Police | SSC | Defence</p>
+        <div style="margin-top: 20px;"><i class="fab fa-instagram fa-2x" style="margin: 0 12px; cursor:pointer;"></i><i class="fab fa-youtube fa-2x" style="cursor:pointer;"></i></div>
+    </div>
+</footer>
 
-<!-- Lightbox JS + WhatsApp scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    AOS.init({ duration: 800, once: true });
     const adminWA = "917739776471";
+    function sendWAMessage(msg) { window.open(`https://wa.me/${adminWA}?text=${encodeURIComponent(msg)}`, '_blank'); }
     
-    function sendWAMessage(message) {
-        window.open(`https://wa.me/${adminWA}?text=${encodeURIComponent(message)}`, '_blank');
-    }
-    
-    // Selection Form - Clean format with proper newlines
-    document.getElementById('sendSelectionWA').addEventListener('click', () => {
+    document.getElementById('sendSelectionWA').onclick = () => {
         let name = document.getElementById('sel_name').value.trim();
         let mobile = document.getElementById('sel_mobile').value.trim();
-        
-        if(!name || !mobile) { 
-            alert("Please fill Name and WhatsApp Number"); 
-            return; 
-        }
-        
-        let exam = document.getElementById('sel_exam').value;
-        let post = document.getElementById('sel_post').value;
-        let rank = document.getElementById('sel_rank').value;
-        let status = document.getElementById('sel_status').value;
-        let village = document.getElementById('sel_village').value;
-        let district = document.getElementById('sel_district').value;
-        let pincode = document.getElementById('sel_pincode').value;
-        
-        // Clean message format - using \n for line breaks
-        let msg = "🏅 Selection Achievement 🏅\n\n";
-        msg += `Name: ${name}\n`;
-        msg += `Mobile: ${mobile}\n`;
-        msg += `Exam: ${exam}\n`;
-        msg += `Post: ${post}\n`;
-        msg += `Rank/Score: ${rank}\n`;
-        msg += `Status: ${status}\n`;
-        msg += `Village: ${village}\n`;
-        msg += `District: ${district}\n`;
-        msg += `PIN: ${pincode}\n\n`;
-        msg += `Thank you LPA!`;
-        
+        if(!name || !mobile) return alert("Fill name & WhatsApp number");
+        let msg = `🏅 Selection Achievement 🏅\n\nName: ${name}\nMobile: ${mobile}\nExam: ${document.getElementById('sel_exam').value}\nPost: ${document.getElementById('sel_post').value}\nRank/Score: ${document.getElementById('sel_rank').value}\nStatus: ${document.getElementById('sel_status').value}\nVillage: ${document.getElementById('sel_village').value}\nDistrict: ${document.getElementById('sel_district').value}\nPIN: ${document.getElementById('sel_pincode').value}\n\nThank you LPA!`;
         sendWAMessage(msg);
-    });
+    };
     
-    // Admission Form - Clean format
-    document.getElementById('submitAdmissionWA').addEventListener('click', () => {
+    document.getElementById('submitAdmissionWA').onclick = () => {
         let full = document.getElementById('fullname').value.trim();
         let father = document.getElementById('fathername').value.trim();
         let mobile = document.getElementById('mobile').value.trim();
         let whats = document.getElementById('whatsapp').value.trim();
-        let village = document.getElementById('village').value.trim();
-        let district = document.getElementById('district').value.trim();
-        let agree = document.getElementById('agreeDeclare').checked;
-        
-        if(!full || !father || !mobile || !whats || !village || !district) { 
-            alert("Please fill required fields: Name, Father, Mobile, WhatsApp, Village, District"); 
-            return; 
-        }
-        if(!agree) { 
-            alert("You must agree to terms & conditions"); 
-            return; 
-        }
-        
-        let dob = document.getElementById('dob').value;
-        let gender = document.getElementById('gender').value;
-        let qual = document.getElementById('qualification').value;
-        let height = document.getElementById('height').value;
-        let weight = document.getElementById('weight').value;
-        let course = document.getElementById('course').value;
-        let batch = document.getElementById('batch').value;
-        let plan = document.getElementById('plan').value;
-        let goal = document.getElementById('goal').value;
-        
-        let msg = "🏋️ LPA Admission Request 🏋️\n\n";
-        msg += `Name: ${full}\n`;
-        msg += `Father: ${father}\n`;
-        msg += `Mobile: ${mobile}\n`;
-        msg += `WhatsApp: ${whats}\n`;
-        if(dob) msg += `DOB: ${dob}\n`;
-        msg += `Gender: ${gender}\n`;
-        msg += `Village: ${village}\n`;
-        msg += `District: ${district}\n`;
-        msg += `Qualification: ${qual}\n`;
-        if(height) msg += `Height: ${height} cm\n`;
-        if(weight) msg += `Weight: ${weight} kg\n`;
-        msg += `Course: ${course}\n`;
-        msg += `Batch: ${batch}\n`;
-        msg += `Plan: ${plan}\n`;
-        if(goal) msg += `Goal: ${goal}\n\n`;
-        msg += `✅ Agreed to academy terms.`;
-        
+        if(!full || !father || !mobile || !whats) return alert("Fill required fields");
+        if(!document.getElementById('agreeDeclare').checked) return alert("Accept terms");
+        let msg = `🏋️ LPA Admission Request 🏋️\n\nName: ${full}\nFather: ${father}\nMobile: ${mobile}\nWhatsApp: ${whats}\nVillage: ${document.getElementById('village').value}\nDistrict: ${document.getElementById('district').value}\nCourse: ${document.getElementById('course').value}\nBatch: ${document.getElementById('batch').value}\nPlan: ${document.getElementById('plan').value}\n✅ Agreed to terms.`;
         sendWAMessage(msg);
-    });
+    };
 </script>
 </body>
 </html>
